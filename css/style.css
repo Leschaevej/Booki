@@ -15,32 +15,6 @@
     color: var(--main-color);
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    transform: scale(0.32);
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links li a:hover {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
-    padding-top: 20px;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -56,6 +30,17 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+h1 {
+    font-size: 25px;
+    padding-top: 1.5em;
+}
+
+p {
+    font-size: 19px;
+    padding-top: 0.1em;
+    padding-bottom: 1.5em;
 }
 
 .section-title {
@@ -85,6 +70,37 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header ***********/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.logo img {
+    /*transform: scale(0.32);*/
+    /*justify-content: flex-start;*/
+    max-width: 30%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    padding-top: 19px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -95,8 +111,52 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
+}
+
+/****** Recherche ***********/
+form {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.recherche {
+    width: 50%;
+    max-width: 495px;
+    background-color: var(--main-bg-color);
+    border-radius: 4% 4% 4% 4% / 40% 40% 40% 40% ;
+}
+
+.fa-location-dot {
+    color: black;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 0.8em;
+}
+
+.box {
+    width: 300px;
+    height: 47px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid var(--main-bg-color);
+}
+
+.box::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.envoie {
+    background-color: var(--main-color);
+    color: var(--filter-bg-color);
+    border: none;
+    border-radius: 0% 15% 15% 0% / 0% 40% 40% 0% ;
+    width: 150px;
+    height: 47px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /****** Hebergements ***********/
@@ -107,6 +167,7 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    padding: 30px;
 }
 
 .populaires-title {
