@@ -35,16 +35,22 @@ a {
 h1 {
     font-size: 25px;
     padding-top: 1.5em;
+    padding-bottom: 0.1em;
 }
 
 h2 {
     font-size: 18px;
 }
 
-p {
+h3{
     font-size: 19px;
     padding-top: 0.1em;
     padding-bottom: 1.5em;
+    font-weight: 200;
+}
+
+p {
+    
 }
 
 .section-title {
@@ -165,17 +171,7 @@ form {
 }
 
 /****** Filtres ***********/
-.filtres {
-    gap: 20px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
 button {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 800;
     background-color: white;
     border: 2px solid var(--main-bg-color);
     cursor: pointer;
@@ -185,20 +181,55 @@ button:hover {
     background-color: var(--filter-bg-color)
 }
 
+.filtres {
+    gap: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
 .btn-economique {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
     border-radius: 18% 18% 18% 18% / 50% 50% 50% 50% ;
 }
 
 .btn-famille {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
     border-radius: 24% 24% 24% 24% / 50% 50% 50% 50% ;
 }
 
 .btn-romantique {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
     border-radius: 19% 19% 19% 19% / 50% 50% 50% 50% ;
 }
 
 .btn-pepites {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
     border-radius: 20% 20% 20% 20% / 50% 50% 50% 50% ;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.btn-info {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%  ;
+    font-size: 10px;
+    width: 24px;
+    height: auto;
 }
 
 /****** Hebergements ***********/
