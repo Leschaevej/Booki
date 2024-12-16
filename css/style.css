@@ -90,8 +90,6 @@ nav {
 }
 
 .logo img {
-    /*transform: scale(0.32);*/
-    /*justify-content: flex-start;*/
     max-width: 30%;
     height: auto;
 }
@@ -239,12 +237,6 @@ button:hover {
     padding: 30px;
 }
 
-.hebergements-title {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hebergements-cards {
     display: flex;
     justify-content: space-between;
@@ -253,9 +245,8 @@ button:hover {
 
 .hebergements-cards .card {
     margin-top: 33px;
-    width: 250px;
+    width: 240px;
     height: 220px;
-    box-shadow: 2px 4px 6px black 20%;
 }
 
 .hebergements-cards img {
@@ -303,7 +294,6 @@ button:hover {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    box-shadow: 2px 4px 6px black 20%;
 }
 
 .populaires-cards img {
@@ -335,8 +325,36 @@ button:hover {
     margin-bottom: 5px;
 }
 
+/****** Activites ***********/
+.activites {
+    padding: 20px;
+}
 
+.activites-title {
+    margin-bottom: 30px;
+}
 
+.activites-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%
+}
+
+.activites-card .card {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.activites-card img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
