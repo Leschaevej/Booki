@@ -334,26 +334,35 @@ button:hover {
     margin-bottom: 30px;
 }
 
-.activites-card {
+.activites-cards {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     width: 100%
 }
 
-.activites-card .card {
-    height: 270px;
+.link-card {
+    width: 25%;
+}
+
+.activites-cards .card {
+    height: 440px;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
-.activites-card img {
-    height: 80%;
+.activites-cards img {
+    height: 88%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.activites-cards .card-title {
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
