@@ -42,8 +42,13 @@ h2 {
     font-size: 18px;
 }
 
-h3{
+h3 {
     font-size: 19px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -241,6 +246,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .hebergements-cards .card {
@@ -279,10 +285,21 @@ button:hover {
     margin-bottom: 5px;
 }
 
+.more{
+    margin-top: 30px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
     padding: 30px;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .populaires-title {
@@ -327,7 +344,7 @@ button:hover {
 
 /****** Activites ***********/
 .activites {
-    padding: 20px;
+    padding: 50px;
 }
 
 .activites-title {
@@ -337,7 +354,7 @@ button:hover {
 .activites-cards {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
     width: 100%
 }
 
@@ -363,6 +380,27 @@ button:hover {
 .activites-cards .card-title {
     margin-left: 20px;
     margin-top: 15px;
+}
+
+/****** Footer ***********/
+footer {
+    display: flex;
+    gap: 300px;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-links li {
+margin-bottom: 15px;
+}
+
+.accent {
+    text-transform: uppercase;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
