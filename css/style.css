@@ -247,6 +247,7 @@ button:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
 }
 
 .hebergements-cards .card {
@@ -385,7 +386,7 @@ button:hover {
 /****** Footer ***********/
 footer {
     display: flex;
-    gap: 300px;
+    gap: 250px;
     padding: 20px;
     background-color: var(--main-bg-color);
 }
