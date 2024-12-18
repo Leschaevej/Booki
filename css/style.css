@@ -99,9 +99,13 @@ nav {
     height: auto;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-links {
     list-style: none;
-    display: flex;
 }
 
 .nav-links li {
@@ -378,9 +382,14 @@ button:hover {
     border-top-right-radius: 20px;
 }
 
+.activites-cards .card-content {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
 .activites-cards .card-title {
     margin-left: 20px;
-    margin-top: 15px;
 }
 
 /****** Footer ***********/
@@ -439,9 +448,87 @@ margin-bottom: 15px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards .card {
+        height: 250px;
+    }
+
+    .activites-cards img {
+        height: 75%;
+    }
+
+    .activites-cards .card-content {
+        height: 25%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding: 0;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 35%;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+
+    .links {
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 2px solid var(--main-bg-color);
+        padding-bottom: 10px;
+   }
+
+    .nav-links {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }        
+
+    .nav-links li {
+        margin: 0;
+        width: 50%;
+    }
+
+    .links :hover {
+        border-bottom: 2px solid var(--main-color);
+        
+    }
+
+    .nav-links :hover {
+        border-bottom: hidden;
+    }
+
+    .nav-links li a:hover {
+        color: var(--main-color);
+        border-top: hidden;
+    }
+
+    .filtres {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 18% 18% 18% 18% / 50% 50% 50% 50% ;
+    }
+
 }
