@@ -116,23 +116,22 @@ nav {
 }
 
 /****** Recherche ***********/
-form {
-    display: flex;
-    align-items: center;
-    width: 31%;
-    height: 47px;
-    background-color: var(--main-bg-color);
-    border-radius: 4% 4% 4% 4% / 40% 40% 40% 40% ;
-}
-
 .recherche {
     margin-top: 30px;
     width: 100%;
     height: 47px;
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
-    
+    padding: 10px;  
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 31%;
+    height: 47px;
+    background-color: var(--main-bg-color);
+    border-radius: 15px ;
 }
 
 .fa-location-dot {
@@ -151,7 +150,8 @@ form {
 
 .box::placeholder {
     color: black;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 .envoie {
@@ -162,9 +162,10 @@ form {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0% 15% 15% 0% / 0% 40% 40% 0% ;
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px;
     width: 40%;
-    height: 47px;
+    height: 49px;
     font-size: 20px;
     font-weight: 800;
 }
@@ -174,49 +175,27 @@ form {
 }
 
 /****** Filtres ***********/
-button {
-    background-color: white;
-    border: 2px solid var(--main-bg-color);
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--filter-bg-color)
-}
-
 .filtres {
-    gap: 20px;
+    gap: 10px;
     margin-top: 30px;
     display: flex;
     align-items: center;
 }
 
-.btn-economique {
+.filtres button {
+    background-color: white;
+    border-radius: 30px;
     padding: 10px;
     font-size: 16px;
     font-weight: 800;
-    border-radius: 18% 18% 18% 18% / 50% 50% 50% 50% ;
+    border: 2px solid var(--main-bg-color);
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.btn-famille {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 800;
-    border-radius: 24% 24% 24% 24% / 50% 50% 50% 50% ;
-}
-
-.btn-romantique {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 800;
-    border-radius: 19% 19% 19% 19% / 50% 50% 50% 50% ;
-}
-
-.btn-pepites {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 800;
-    border-radius: 20% 20% 20% 20% / 50% 50% 50% 50% ;
+button:hover {
+    background-color: var(--filter-bg-color);
+    color: black;
 }
 
 .info {
@@ -229,10 +208,12 @@ button:hover {
 .btn-info {
     padding: 8px;
     margin-right: 10px;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%  ;
+    border-radius: 20px  ;
     font-size: 10px;
-    width: 24px;
-    height: auto;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--main-bg-color);
+    background-color: white;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -426,6 +407,15 @@ margin-bottom: 15px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    form{
+        width: 50%;
+    }
+
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -494,14 +484,10 @@ margin-bottom: 15px;
 
     h1 {
         padding: 0px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
         font-size: 22px;
     }
 
     p {
-        margin-left: 20px;
         margin-top: 10px;
         font-size: 16px;
     }
@@ -560,17 +546,24 @@ margin-bottom: 15px;
         padding: 0;
     }
 
+    .titre {
+        margin: 20px;
+    }
+
     .recherche {
         justify-content: center;
     }
 
     form {
-        width: 95%;
+        width: 90%;
     }
 
     .envoie {
-        width: 17%;
-        border-radius: 30% 30% 30% 30% / 30% 30% 30% 30% ;
+        width: 45px;
+        border-radius: 15px ;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
     }
 
     .envoie .text {
@@ -588,17 +581,33 @@ margin-bottom: 15px;
     }
 
     .filtres {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .button {
-        display: flex;
+    .filtres button {
+        margin-right: 0;
+    }
+
+    .button button {
+        width: 46%;
+        margin: 5px;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        border-radius: 18% 18% 18% 18% / 50% 50% 50% 50% ;
     }
 
+    .info {
+        margin: 20px;
+    }
+
+    .btn-info {
+        margin-right: 10px;
+    }
+
+    .populaires {
+        order: 1;
+    }
+
+    .hebergements {
+        order: 2;
+    }
 }
