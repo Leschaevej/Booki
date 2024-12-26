@@ -458,6 +458,10 @@ margin-bottom: 15px;
     .activites-cards .card-content {
         height: 25%;
     }
+
+    footer {
+        gap: 140px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
