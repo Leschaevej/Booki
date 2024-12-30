@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ h4 {
 }
 
 p {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .section-title {
@@ -148,7 +148,7 @@ form {
 .box::placeholder {
     color: black;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .envoie {
@@ -163,7 +163,7 @@ form {
     border-bottom-right-radius: 15px;
     width: 40%;
     height: 49px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
 }
 
@@ -234,10 +234,10 @@ button:hover {
 
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    gap: 30px;
+    justify-content: space-between;
+    row-gap: 30px;
 }
 
 .hebergements-title {
@@ -246,23 +246,23 @@ button:hover {
 
 .hebergements-cards a {
     width: 30%;
+    height: 240px;
 }
 
 .hebergements-cards .card {
-    width: 100%;
-    height: 220px;
+    height: 100%;
 }
 
 .hebergements-cards img {
     width: 100%;
-    height: 136px;
+    height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .hebergements-cards .card-content {
     width: 100%;
-    padding-left: 15px;
+    padding-left: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -270,7 +270,7 @@ button:hover {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 4px;
 }
 
@@ -296,7 +296,7 @@ button:hover {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    row-gap: 45px;
 }
 
 .populaires-title {
@@ -434,11 +434,11 @@ margin-bottom: 15px;
     }
 
     .hebergements-cards {
-        gap: 30px;
+        row-gap: 30px;
     }
 
-    .hebergements-cards .card {
-        width: 257px;
+    .hebergements-cards a {
+        width: 30%;
     }
 
     .populaires {
@@ -462,6 +462,14 @@ margin-bottom: 15px;
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .populaires-cards .card-content {
+        padding-left: 10px;
+    }
+
+    .activites {
+        padding: 30px;
     }
 
     .activites-cards .card {
@@ -603,6 +611,10 @@ margin-bottom: 15px;
         width: 90%;
     }
 
+    .box::placeholder {
+        padding-right: 40px;
+    }
+
     .filtres {
         margin-left: 20px;
         margin-right: 20px;
@@ -610,16 +622,20 @@ margin-bottom: 15px;
     
     .button {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .filtres button {
         margin-right: 0;
+        font-size: 13px;
     }
 
     .button button {
-        width: 46%;
-        margin: 5px;
-        flex-direction: row;
+        width: 49%;
+        margin: 0;
+        
     }
 
     .info {
@@ -654,6 +670,7 @@ margin-bottom: 15px;
     .populaires-cards {
         flex-direction: column;
         align-items: center;
+        row-gap: 20px;
     }
 
     .populaires-cards .card {
@@ -676,6 +693,11 @@ margin-bottom: 15px;
 
     .hebergements-cards {
         align-items: center;
+        flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
     }
 
     .hebergements-cards .card {
