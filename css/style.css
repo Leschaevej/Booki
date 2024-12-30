@@ -91,7 +91,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .logo img {
@@ -102,17 +102,14 @@ nav {
 .links {
     display: flex;
     flex-direction: row;
+    gap: 50px;
     list-style: none;
-}
-
-.links li {
-    margin-left: 20px;
 }
 
 .links li a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
-    padding-top: 19px;
+    padding-top: 29px;
 }
 
 /****** Recherche ***********/
@@ -128,7 +125,7 @@ nav {
 form {
     display: flex;
     align-items: center;
-    width: 31%;
+    width: 32%;
     height: 47px;
     background-color: var(--main-bg-color);
     border-radius: 15px ;
@@ -239,13 +236,20 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
     width: 100%;
+    gap: 30px;
+}
+
+.hebergements-title {
+    margin-bottom: 30px;
+}
+
+.hebergements-cards a {
+    width: 30%;
 }
 
 .hebergements-cards .card {
-    margin-top: 33px;
-    width: 240px;
+    width: 100%;
     height: 220px;
 }
 
@@ -280,7 +284,7 @@ button:hover {
 }
 
 .more{
-    margin-top: 30px;
+    margin-top: 34px;
 }
 
 /****** Populaires ***********/
@@ -292,24 +296,24 @@ button:hover {
 .populaires-cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 45px;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -339,6 +343,7 @@ button:hover {
 /****** Activites ***********/
 .activites {
     padding: 50px;
+    margin-bottom: 20px;
 }
 
 .activites-title {
@@ -398,6 +403,10 @@ footer {
 margin-bottom: 15px;
 }
 
+.footer-links a {
+    width: 100%;
+}
+
 .accent {
     text-transform: uppercase;
 }
@@ -422,6 +431,14 @@ margin-bottom: 15px;
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards {
+        gap: 30px;
+    }
+
+    .hebergements-cards .card {
+        width: 257px;
     }
 
     .populaires {
@@ -516,6 +533,7 @@ margin-bottom: 15px;
     .links {
         display: flex;
         width: 100%;
+        gap: 0;
     }
 
     .gauche {
@@ -555,11 +573,12 @@ margin-bottom: 15px;
     }
 
     .recherche {
-        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 
     form {
-        width: 90%;
+        width: 98%;
     }
 
     .envoie {
@@ -581,12 +600,16 @@ margin-bottom: 15px;
     }
 
     .box {
-        width: 83%;
+        width: 90%;
     }
 
     .filtres {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    
+    .button {
+        width: 100%;
     }
 
     .filtres button {
