@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-:root { /*Couleur general*/
+:root { /*Couleurs general*/
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: inherit; /*Retire la couleur des lien*/
+    color: inherit; /*Retire la couleur des liens*/
     text-decoration: none; /*Retire le soulignement*/
 }
 
@@ -427,6 +427,7 @@ footer {
 
     nav{
         flex-direction: column;
+        align-items: center;
         row-gap: 30px;
     }
 
