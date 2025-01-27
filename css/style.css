@@ -42,6 +42,10 @@ ul {
     padding: 5px;
 }
 
+.card:hover {
+    background-color: var(--filter-bg-color);
+}
+
 .card img {
     object-fit: cover; /*Rempli et garde les proportions*/
 }
@@ -222,6 +226,10 @@ form {
     background-color: white;
 }
 
+.btn-info:hover {
+    background-color: var(--filter-bg-color);
+}
+
 /****** Accommodation-and-popular ***********/
 .accommodation-and-popular {
     display: flex;
@@ -355,6 +363,10 @@ footer {
 
 .footer-links a {
     width: 100%;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
 .accent {
@@ -508,6 +520,7 @@ footer {
     .choice {
         justify-content: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     button {
